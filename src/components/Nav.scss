@@ -1,0 +1,46 @@
+nav {
+    width: 100%;
+    color: black;
+    padding-inline: 0.75rem;
+    padding-block: 0.25rem;
+    background-color: hsla(0, 0%, 18%, 0.178);
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+
+    .left{
+        display: flex;
+        gap: 1.1rem;
+
+        .apple-icon{
+            color: black;
+        }
+    }
+
+    .right{
+        display: flex;
+        gap: 1.2rem;
+
+        .battery-icon,
+        .wifi-icon,
+        .apple-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 18px;
+                height: 18px;
+                object-fit: contain;
+                filter: brightness(0);
+            }
+        }
+
+        .wifi-icon{
+            color: black;
+        }
+    }
+}

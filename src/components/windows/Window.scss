@@ -1,0 +1,128 @@
+.window {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 1000px;
+    height: 500px;
+    min-width: 300px;
+    min-height: 220px;
+    z-index: 10;
+    background-color: black;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    color: rgb(207, 207, 207);
+    font-family: 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 500;
+    cursor: default;
+    touch-action: none;
+    box-sizing: border-box;
+
+    .resize-handle {
+        position: absolute;
+        z-index: 20;
+        background: transparent;
+    }
+
+    .resize-handle.top {
+        top: 0;
+        left: 8px;
+        right: 8px;
+        height: 6px;
+        cursor: n-resize;
+    }
+
+    .resize-handle.bottom {
+        bottom: 0;
+        left: 8px;
+        right: 8px;
+        height: 6px;
+        cursor: s-resize;
+    }
+
+    .resize-handle.left {
+        left: 0;
+        top: 8px;
+        bottom: 8px;
+        width: 6px;
+        cursor: w-resize;
+    }
+
+    .resize-handle.right {
+        right: 0;
+        top: 8px;
+        bottom: 8px;
+        width: 6px;
+        cursor: e-resize;
+    }
+
+    .resize-handle.top-left {
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        cursor: nwse-resize;
+    }
+
+    .resize-handle.top-right {
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        cursor: nesw-resize;
+    }
+
+    .resize-handle.bottom-left {
+        bottom: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        cursor: nesw-resize;
+    }
+
+    .resize-handle.bottom-right {
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        cursor: nwse-resize;
+    }
+
+    .nav {
+        padding-inline: 0.65rem;
+        padding-block: 0.5rem;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        border-bottom: 1px solid rgba(224, 223, 223, 0.603);
+        cursor: grab;
+        user-select: none;
+
+        .dots {
+            display: flex;
+            gap: 0.25rem;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+            .red {
+                background-color: rgb(210, 0, 0);
+            }
+
+            .yellow {
+                background-color: rgb(218, 218, 0);
+            }
+
+            .green {
+                background-color: rgb(0, 120, 0);
+            }
+        }
+    }
+
+    .main-content{
+        height: 100%;
+    }
+}
