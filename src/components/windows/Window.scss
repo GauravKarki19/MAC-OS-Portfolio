@@ -122,7 +122,16 @@
         }
     }
 
-    .main-content{
+    .main-content {
         height: 100%;
+    }
+
+    *::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    *::-webkit-scrollbar-thumb{
+        background-color: #636363;
+        border-radius: 8px;
     }
 }
