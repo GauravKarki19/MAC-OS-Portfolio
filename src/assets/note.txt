@@ -1,7 +1,8 @@
 /**
  * @file: profile.config.ts
- * @author: Engineering Portfolio
- * @summary: A high-performance full-stack engineer.
+ * @author: Gaurav Karki
+ * @summary: A full-stack developer specializing in MERN, AI/GenAI,
+ *           RAG systems, and scalable backend solutions.
  */
 
 // --------------------------------------------------
@@ -10,96 +11,301 @@
 
 const TECH_STACK = {
   frontend: [
-    "React.js",    // 100%
-    "Next.js",     // 95%
-    "TailwindCSS", // 90%
-    "Three.js",    // 70%
+    "React.js",
+    "JavaScript (ES6+)",
+    "Tailwind CSS",
+    "Redux",
+    "Vite",
   ],
+
   backend: [
-    "Node.js",     // 90%
-    "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+    "Node.js",
+    "Express.js",
+    "RESTful APIs",
+    "MongoDB",
+    "SQL",
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+
+  aiAndGenAI: [
+    "LangChain",
+    "RAG",
+    "FAISS",
+    "ChromaDB",
+    "Prompt Engineering",
+    "Gemini AI",
+  ],
+
+  programmingLanguages: [
+    "Java",
+    "Python",
+    "JavaScript",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "Postman",
+    "VS Code",
+    "IntelliJ IDEA",
+  ],
+
+  deployment: [
+    "Vercel",
+    "Netlify",
+    "Render",
+    "Cloudinary",
+  ],
 };
+
 
 // --------------------------------------------------
 // 2. EXPERIENCE LOG (Reverse Chronological)
 // --------------------------------------------------
 
 class ProfessionalHistory {
-  
-  /** * CURRENT ROLE
-   * @period 2023 - Present 
+
+  /**
+   * CURRENT / MOST RECENT ROLE
+   * @period January 2026 - June 2026
    */
-  public async TechFlow_Systems(): Promise<Impact> {
-    const role = "Senior Full-Stack Engineer";
-    
-    // Key Achievements
-    const optimized = await api.optimize({ strategy: "Redis Caching" });
-    const latencyReduction = "40%";
-    
-    const leadership = this.mentor(["Jr. Dev 1", "Jr. Dev 2", "Jr. Dev 3"]);
-    const architecture = "Monolith -> Microservices Migration";
-    
-    return { role, optimized, architecture, leadership };
+  public async FinvestFx(): Promise<Impact> {
+
+    const role = "SDE Intern";
+
+    // Integrated DigiLocker authentication
+    const authentication = {
+      platform: "DigiLocker",
+      integration: "MeriPehchaan OAuth2",
+      focus: [
+        "Authentication debugging",
+        "OAuth2 scope validation",
+      ],
+    };
+
+    // Real-time notification infrastructure
+    const notifications = {
+      technology: "Firebase Cloud Messaging",
+      platform: "Android",
+      capabilities: [
+        "Real-time notifications",
+        "Scheduled notifications",
+      ],
+    };
+
+    // Mutual Fund platform
+    const mutualFundDashboard = {
+      integration: "MF Central APIs",
+      frontend: "React",
+      intelligence: "AI-powered insights",
+    };
+
+    // RAG chatbot optimization
+    const ragOptimization = {
+      architecture: "RAG",
+      retrieval: "MongoDB",
+      llm: "Gemini AI",
+
+      promptTokens: {
+        before: "10K",
+        after: "3K",
+        reduction: "70%",
+      },
+
+      impact: "Significantly reduced Gemini API costs",
+    };
+
+    return {
+      role,
+      authentication,
+      notifications,
+      mutualFundDashboard,
+      ragOptimization,
+    };
   }
 
-  /** * PREVIOUS ROLE
-   * @period 2021 - 2023
+
+  /**
+   * PREVIOUS ROLE
+   * @period April 2025 - July 2025
    */
-  public PixelPerfect_Studios(): void {
-    this.role = "Frontend Developer";
-    this.focus = "High-Fidelity Animations";
-    
-    // Implemented GSAP scroll-triggers for 15+ clients
-    // Improved Lighthouse Performance Scores: 65 -> 98
+  public InternFree(): void {
+
+    this.role = "Fullstack Developer Intern";
+
+    this.stack = [
+      "Node.js",
+      "Express.js",
+      "React",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Postman",
+    ];
+
+    // REST API development
+    this.apiDevelopment = {
+      type: "RESTful APIs",
+      integration: "React Frontend",
+      improvement: "25% reduction in API testing time",
+    };
+
+    // Authentication & profile management
+    this.security = {
+      authentication: "Secure Authentication",
+      profileManagement: "Cloudinary-based Profile Management",
+    };
+
+    // Deployment
+    this.deployment = "Live Production Deployment";
+
+    // Recognition
+    this.recognition = "Certificate of Excellence";
   }
 }
 
+
 // --------------------------------------------------
-// 3. COMPETITIVE ACHIEVEMENTS
+// 3. PROJECT PORTFOLIO
 // --------------------------------------------------
 
-interface HackathonWin {
-  rank: number;
-  event: string;
-  project: string;
+interface Project {
+  name: string;
+  type: string;
+  technologies: string[];
+  highlights: string[];
 }
 
-const trophyCabinet: HackathonWin[] = [
+const projects: Project[] = [
+
   {
-    rank: 1,
-    event: "Global AI Hackathon 2024",
-    project: "EcoVision (Computer Vision Waste Segregation)",
-    // Prize: $5,000
+    name: "SmartGovRec",
+    type: "Full-Stack Government Welfare Platform",
+
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Render",
+    ],
+
+    highlights: [
+      "Helps citizens discover and verify eligibility for government welfare programs",
+      "Implemented secure JWT authentication",
+      "Built profile management and scheme tracking",
+      "Added eligibility filters based on age, income, occupation, caste, gender, and state",
+      "Implemented multilingual support using i18next",
+    ],
   },
+
+
   {
-    rank: 500, // Top 500 Global
-    event: "Google Code Jam 2023",
-    project: "Algorithm Optimization (Dynamic Programming)",
+    name: "MediSecure",
+    type: "Full-Stack Digital Health Record Platform",
+
+    technologies: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "face-api.js",
+      "Tesseract.js",
+      "pdf-parse",
+      "Cloudinary",
+    ],
+
+    highlights: [
+      "Built digital health record management for citizens and professionals",
+      "Created dedicated citizen and professional dashboards",
+      "Implemented Arogya Netra Card with QR-based authentication",
+      "Integrated facial recognition and OTP verification",
+      "Developed OCR-based medical report analysis",
+      "Deployed frontend on Vercel and backend on Render",
+      "Used Cloudinary for secure document storage",
+    ],
+  },
+];
+
+
+// --------------------------------------------------
+// 4. COMPETITIVE ACHIEVEMENTS
+// --------------------------------------------------
+
+interface Achievement {
+  rank: string;
+  event: string;
+  project?: string;
+}
+
+const trophyCabinet: Achievement[] = [
+
+  {
+    rank: "1st Runner-up",
+    event: "Hack For Impact 2025",
+    project: "IIIT Delhi",
+  },
+
+  {
+    rank: "Finalist",
+    event: "Build Wars 2025",
+    project: "MAIT",
   }
 ];
 
+
 // --------------------------------------------------
-// 4. ACADEMIC BACKGROUND
+// 5. ACADEMIC BACKGROUND
 // --------------------------------------------------
 
 const education = new Map<string, string>([
-  ["Stanford University", "MS Computer Science (3.9 GPA)"],
-  ["MIT World Peace Univ", "B.Tech Information Tech (8.8 CGPA)"]
+  [
+    "Maharaja Agrasen Institute of Technology",
+    "Bachelor of Technology in Computer Science | GPA: 8.3 / 10.0"
+  ],
+
+  [
+    "Kendriya Vidyalaya INA Colony",
+    "Class XII (PCM, CBSE): 86.8% | Class X (CBSE): 91.4%"
+  ],
 ]);
 
+
+// --------------------------------------------------
+// 6. CURRENT PROFILE
+// --------------------------------------------------
+
+const developerProfile = {
+  name: "Gaurav Karki",
+
+  role: "Full-Stack Developer",
+
+  specialization: [
+    "MERN Stack",
+    "Backend Development",
+    "AI/GenAI",
+    "RAG Systems",
+    "API Development",
+  ],
+
+  currentFocus: [
+    "Full-Stack Development",
+    "Generative AI",
+    "RAG Applications",
+    "LLM Optimization",
+    "Data Structures & Algorithms",
+  ],
+
+  location: "New Delhi, India",
+
+  status: "Open to Opportunities",
+
+  availability: "Full-Time / Internship",
+
+  contact: {
+    email: "gauravkarki0045@gmail.com",
+    phone: "+91 9718325298",
+  },
+};
+
+
 export default new ProfessionalHistory();
-
-
-```bash
-# TERMINAL OUTPUT
-# ---------------------------------------
-$ user --status
-> Status: Open to Opportunities
-> Location: Global / Remote
-> Loading Assets... [||||||||||] 100%
-> Ready.
-```
