@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Window.scss';
 
-const MacWindow = ({ children }) => {
+const MacWindow = ({ children, windowName, setWindowState }) => {
     const [position, setPosition] = useState({ x: 80, y: 80 });
     const [size, setSize] = useState({ width: 1000, height: 500 });
     const dragState = useRef({ active: false, offsetX: 0, offsetY: 0 });
@@ -131,7 +131,7 @@ const MacWindow = ({ children }) => {
 
             <div className="nav" onMouseDown={handleMouseDown}>
                 <div className="dots">
-                    <div className="dot red"></div>
+                    <div onClick={() => setWindowState(state => ({ ...state, [windowName]: false }))} className="dot red"></div>
                     <div className="dot yellow"></div>
                     <div className="dot green"></div>
                 </div>
