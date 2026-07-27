@@ -7,7 +7,7 @@ const Resume = () => {
     <div>
       <MacWindow>
         <div className="resume-window">
-            <iframe src="/resume.pdf" frameborder="0"></iframe>
+            <embed src="/resume.pdf" frameBorder="0"></embed>
         </div>
       </MacWindow>
     </div>
